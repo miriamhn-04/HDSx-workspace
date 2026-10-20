@@ -59,10 +59,8 @@ calculate_bmi_mean(my_data)
 ## Save Output
 
 ```{r}
-dir.create("assignments/assignment02-r-with-ai/submission/
-output", recursive = TRUE, showWarnings = FALSE)
-write_csv(education_summary, "assignments/
-assignment02-r-with-ai/submission/output/summary_table.csv")
+dir.create("assignments/assignment02-r-with-ai/submission/output", recursive = TRUE, showWarnings = FALSE)
+write_csv(education_summary, "assignments/assignment02-r-with-ai/submission/output/summary_table.csv")
 ```
 
 ## AI Audit Note
