@@ -42,18 +42,7 @@ education_summary
 ## Function
 
 ```{r}
-calculate_bmi_mean <- function(data) {
-  bmi_values <- data$BMI
-  bmi_values <- bmi_values[!is.na(bmi_values)]
-
-  if (length(bmi_values) == 0) {
-    return(NA_real_)
-  }
-
-  sum(bmi_values) / length(bmi_values)
-}
-
-calculate_bmi_mean(my_data)
+BMI_mean <- mean(my_data$BMI, na.rm = TRUE)
 ```
 
 ## Save Output
